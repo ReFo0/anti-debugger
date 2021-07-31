@@ -28,7 +28,6 @@ std::uint32_t process(const std::string& name)
 
 
 void titlekoruma() {
-    for (;;) {
         HWND slm1 = FindWindowW(_xor_(L"Qt5QWindowIcon").c_str(), 0);  // Class ID denetleyici 
         if (slm1)
         {
@@ -66,7 +65,6 @@ void titlekoruma() {
             Sleep(1);
             exit(1);
         }
-    }
     Sleep(1000);
 }
 
