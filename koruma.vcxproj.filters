@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="koruma">
+      <UniqueIdentifier>{528b6238-6bb1-4cbb-9e98-eecb6e3f1f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="anabolum">
+      <UniqueIdentifier>{ff388da5-fbdd-4076-a88b-5cfb9367c7c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sifreleme">
+      <UniqueIdentifier>{f4691a3e-b05e-44d5-8741-5c7279da7073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ek">
+      <UniqueIdentifier>{06f505ca-8ada-44be-bef9-c74099b3af69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>anabolum</Filter>
+    </ClCompile>
+    <ClCompile Include="koruma.cpp">
+      <Filter>koruma</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="koruma.h">
+      <Filter>koruma</Filter>
+    </ClInclude>
+    <ClInclude Include="junk.h">
+      <Filter>koruma</Filter>
+    </ClInclude>
+    <ClInclude Include="sifreleme.h">
+      <Filter>sifreleme</Filter>
+    </ClInclude>
+    <ClInclude Include="include.h">
+      <Filter>ek</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

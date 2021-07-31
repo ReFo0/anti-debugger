@@ -1,0 +1,11 @@
+#pragma once
+#include "junk.h"
+#include "koruma.h"
+#include "include.h"
+#include <TlHelp32.h>
+void titlekoruma();
+void Debugkoruma();
+void selamdebugger();
+void koruma0();
+void genelkoruma();
+void exedenetleme();
