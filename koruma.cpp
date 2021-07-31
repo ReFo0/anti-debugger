@@ -111,7 +111,7 @@ void koruma0() {
 }
 
 
-void exedenetleme() { // basit yöntem // simple method
+void execheck() {  // simple method
     DWORD exe1 = process("ollydbg.exe");
     if (exe1) {
         exit(1);
@@ -172,8 +172,7 @@ void exedenetleme() { // basit yöntem // simple method
     if (exe15) {
         exit(1);
     }
-    cout << _xor_(":) Temiz").c_str(); /* eðer yukarýda verilen programlardan birini açmadýysa verilen
-      mesajdýr mesajý isterseniz MessageBoxA Olarak yada ekrana benim yaptýðým gibi yazdýrabilirsiniz*/
+    cout << _xor_(":) Safe").c_str(); 
 }
 
 void genelkoruma() {
