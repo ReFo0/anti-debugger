@@ -1,4 +1,4 @@
 # Anti-Debugger
-[EN] A simple anti-crack system // [TR] crack önleyici
+A simple anti-crack system
 
 x64 Release.
