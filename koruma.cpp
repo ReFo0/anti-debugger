@@ -32,14 +32,14 @@ void titlekoruma() {
         HWND slm1 = FindWindowW(_xor_(L"Qt5QWindowIcon").c_str(), 0);  // Class ID denetleyici 
         if (slm1)
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_ICONERROR);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_ICONERROR);
             Sleep(1);
             exit(1);
         }
         HWND slm2 = FindWindow(NULL, (_xor_("OllyDbg").c_str())); // Title Denetleyici
         if (slm2)
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_ICONERROR);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_ICONERROR);
             Sleep(1);
             junk();
             exit(1);
@@ -47,7 +47,7 @@ void titlekoruma() {
         HWND slm3 = FindWindowW(_xor_(L"XTPMainFrame").c_str(), 0); // Class ID denetleyici 
         if (slm3)
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_ICONERROR);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_ICONERROR);
             Sleep(1);
             junk();
             exit(1);
@@ -55,14 +55,14 @@ void titlekoruma() {
         HWND slm4 = FindWindow(NULL, (_xor_("HTTP Debugger").c_str())); // Title Denetleyici
         if (slm4)
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_ICONERROR);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_ICONERROR);
             Sleep(1);
             exit(1);
         }
         HWND slm5 = FindWindowW(_xor_(L"XTPMainFrame").c_str(), 0); // Class ID denetleyici 
         if (slm5)
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_ICONERROR);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_ICONERROR);
             Sleep(1);
             exit(1);
         }
@@ -91,7 +91,7 @@ void selamdebugger() {
     if (GetLastError() != 0)
     {
         junk();
-        MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_OK);
+        MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_OK);
         Sleep(1);
         exit(1);
         junk();
@@ -103,7 +103,7 @@ void koruma0() {
     {
         if (IsDebuggerPresent())
         {
-            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("LordCheats").c_str(), MB_OK);
+            MessageBoxA(NULL, _xor_("Debugger Detected").c_str(), _xor_("Security").c_str(), MB_OK);
             Sleep(1);
             exit(1);
         }
@@ -111,7 +111,7 @@ void koruma0() {
 }
 
 
-void exedenetleme() { // basit yöntem // simple method
+void exedenetleme() { // basit yÃ¶ntem // simple method
     DWORD exe1 = process("ollydbg.exe");
     if (exe1) {
         exit(1);
@@ -172,8 +172,8 @@ void exedenetleme() { // basit yöntem // simple method
     if (exe15) {
         exit(1);
     }
-    cout << _xor_(":) Temiz").c_str(); /* eðer yukarýda verilen programlardan birini açmadýysa verilen
-      mesajdýr mesajý isterseniz MessageBoxA Olarak yada ekrana benim yaptýðým gibi yazdýrabilirsiniz*/
+    cout << _xor_(":) Temiz").c_str(); /* eÃ°er yukarÃ½da verilen programlardan birini aÃ§madÃ½ysa verilen
+      mesajdÃ½r mesajÃ½ isterseniz MessageBoxA Olarak yada ekrana benim yaptÃ½Ã°Ã½m gibi yazdÃ½rabilirsiniz*/
 }
 
 void genelkoruma() {
